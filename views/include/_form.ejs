@@ -1,10 +1,10 @@
 <!-- form handling -->
 <form action="/api/users" method="POST" id="add_user">
   <div class="new_user">
-    <div class="form-group">
+    <div class="form-group" >
       <label for="name" class="text-light">Name</label>
       <input type="hidden" name="id" value="" />
-      <input type="text" name="name" value="" placeholder="Mark Stoenis" />
+      <input type="text"  name="name" value="" placeholder="Mark Stoenis" required />
     </div>
     <div class="form-group">
       <label for="Email" class="text-light">Email</label>
@@ -13,21 +13,22 @@
         name="email"
         value=""
         placeholder="example@gmail.com"
+        required
       />
     </div>
     <div class="form-group">
       <label for="phone" class="text-light">Phone</label>
-      <input type="text" name="phone" value="" placeholder="01234XXXX" />
+      <input type="text" name="phone" value="" placeholder="01234XXXX" required />
     </div>
 
     <div class="form-group">
       <label for="skillset" class="text-light">Skillset</label>
-      <input type="text" name="skillset" value="" placeholder="accounting.." />
+      <input type="text" name="skillset" value="" placeholder="accounting.." required />
     </div>
 
     <div class="form-group">
       <label for="hobby" class="text-light">Hobby</label>
-      <input type="text" name="hobby" value="" placeholder="cooking.." />
+      <input type="text" name="hobby" value="" placeholder="cooking.." required />
     </div>
 
     <div class="form-group">
